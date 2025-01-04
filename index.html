@@ -6,17 +6,17 @@
   <link href="./styles.css" rel="stylesheet">
   <title>Virtron Vaults</title>
 </head>
-<body class="bg-black text-white h-screen flex items-center">
-  <!-- Main Container -->
-  <div class="w-full max-w-screen-lg px-10">
-    <!-- Content Wrapper -->
-    <div class="max-w-3xl">
+<body class="bg-black text-white h-screen relative">
+  <!-- Main Content -->
+  <div class="h-full w-full flex">
+    <!-- Left Content -->
+    <div class="w-1/2 flex flex-col justify-center items-start px-10 z-10">
       <!-- Logo with Text -->
       <div class="flex items-center mb-4">
-        <!-- Logo Image -->
         <img src="./logo.png" alt="Virtron Logo" class="h-24 w-24" />
-        <!-- Logo Text -->
-        <h1 class="text-4xl font-semibold">Virtron Vaults</h1>
+        <div>
+          <h1 class="text-4xl font-semibold">Virtron Vaults</h1>
+        </div>
       </div>
       <!-- Title -->
       <h2 class="text-6xl font-bold mb-6 leading-tight">
@@ -33,6 +33,11 @@
           Learn More
         </button>
       </a>
+    </div>
+    <!-- Right Image with Overlay -->
+    <div class="w-1/2 h-full relative">
+      <img src="./Vault.webp" alt="Vault" class="h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-black opacity-50"></div>
     </div>
   </div>
 </body>
