@@ -5,12 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./styles.css" rel="stylesheet">
   <title>Virtron Vaults</title>
+  <style>
+    /* Media query to hide the vault image on smaller screens */
+    @media (max-width: 768px) {
+      .right-content {
+        display: none;
+      }
+      .left-content {
+        width: 100%; /* Adjust width to take full screen */
+        padding: 20px; /* Add padding for better spacing */
+      }
+    }
+  </style>
 </head>
 <body class="bg-black text-white h-screen relative">
   <!-- Main Content -->
-  <div class="h-full w-full flex">
+  <div class="h-full w-full flex flex-wrap">
     <!-- Left Content -->
-    <div class="w-1/2 flex flex-col justify-center items-start px-10 z-10">
+    <div class="left-content w-1/2 flex flex-col justify-center items-start px-10 z-10">
       <!-- Logo with Text -->
       <div class="flex items-center mb-4">
         <img src="./logo.png" alt="Virtron Logo" class="h-24 w-24" />
@@ -35,7 +47,7 @@
       </a>
     </div>
     <!-- Right Image with Overlay -->
-    <div class="w-1/2 h-full relative">
+    <div class="right-content w-1/2 h-full relative">
       <img src="./Vault.webp" alt="Vault" class="h-full w-full object-cover" />
       <div class="absolute inset-0 bg-black opacity-50"></div>
     </div>
